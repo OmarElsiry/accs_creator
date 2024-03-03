@@ -18,6 +18,10 @@ chrome_options = webdriver.ChromeOptions()
 chrome_options.add_argument(
     "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.49"
 )
+#brave_options.add_argument(
+#    "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.49"
+#)
+
 chrome_options.add_argument("--incognito")  # Start Chrome in incognito mode
 chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
 chrome_options.add_argument(f"--user-data-dir={user_data_dir}")
